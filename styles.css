@@ -4,163 +4,140 @@ body {
     margin: 1vw;
 }
 
-/*
-.responsive {
-    max-width: 200px;
-    width: 100%;
-    height: auto;
-}
-*/
 * {
     box-sizing: border-box;
 }
+
+/* adds image background and sizes the header */
 header {
     background-attachment: local;
     background-image: url(images/header-background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    max-height: 500px;
-    height: 20vw;
+    max-height: 400px;
+    height: 25vw;
     display: flex;
-
+    position: relative;
 }
-
+/* positions the header logo */
 header img {
     height: 20vw;
-    max-height: 300px;
-    position: absolute;
-    top: 5vw;
-    left: 5vw;
+    position: relative;
+    top: 2.5vw;
+    left: 2.5vw;
     display: flex;
+    max-height: 300px;
 }
-
+/* positiions the navbar in the center */
 nav {
-    width: 50vw;
-    flex-wrap: nowrap;
-    margin: 0;
-    align-content: center;
+    position: absolute;
+    display: flex;
+    font-size: 2vw;
     text-transform: uppercase;
+    overflow: hidden;
+    justify-content: center;
+    transform: translate(-50%,-50%);
+    top: 70%;
     left: 50%;
-    right: 50%;
+    
 }
-
+nav ul {
+    width: max-content;
+}
+/* removes bullet points, sets background color and opacity */
 nav li {
     list-style-type: none;
     display: block;
-    border: 3px solid black;
     margin: 0;
     float: left;
     background-color: #e81828;
-    overflow: hidden;
+    opacity: .8;
+    justify-content: space-evenly;
 }
-
+/* changes text color, and creates the box around elements */
 nav ul a {
     display: inline-block;
     text-decoration: none;
     color: #ffffff;
-    padding: 3vw;
-    left: 0;
-    margin: 0;
+    padding: 2vw;
+    border: .3vw solid black;
 }
-
 nav ul li a {
-    
     display: block;
-    flex-direction: column;    
-    text-align: center;
-    
 }
-
-/*
-nav {
-    background-color: #e81828;
-    border: 5px solid black;
-    width: 50vw;
-    text-align: center;
-    text-transform: uppercase;
-    left: 50%;
-    right: 50%;
-    display: flex;
+/* changes nav hover color */
+nav li a:hover {
+    color: #e81828;
+    background-color: #cccccc;
+    font-weight: bold;
 }
-
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-nav ul {
-    list-style-type: none;
-    align-content: center;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 5vw;
-    border: 5px solid black;
-    
-}
-*/
 
 /* footer sitemap, logo, and socials*/
 footer {
     background-color: #e81828;
     font-family: Georgia, serif;
-    width: 100vw;
-    height: fit-content;
-    font-size: 2vw;
-    display: inline-block;
+    width: 100%;
+    max-height: 100px;
+    height: 5vw;
     position: relative;
+    display: flex;
 }
-
-footer #footer-logo {
-    display: inline-block;
-    width: 10vw;
-    position: fixed;
-    left: 50vw;
-    right: 50vw;
+/* ssizes and centers footer logo */
+#footer-logo {
+    display: flex;
+    width: 12.5vw;
+    position: absolute;
+    left: 50%;
     transform: translate(-50%, 0%);
     margin-top: 1px;
     margin-bottom: 1px;
 }
-
+/* positions the sitemap */
 .sitemap a {
     color: #ffffff;
     padding: .25vw .5vw .25vw .5vw;
     display: inline-block;
-    vertical-align: middle;
-    position: relative;
     text-transform: uppercase;
+    font-size: 2.5vw;
 }
-
+/* changes hover color for sitemap */
+.sitemap a:hover {
+    color: black;
+    font-weight: bold;
+}
+/* changes sitemap position off of left margin and allows it to fill space better */
+.sitemap {
+    margin-top: .75vw;
+    margin-left: .75vw;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 21%;
+}
+/* changes social media icon position off of left margin and allows it to fill space better */
 .socials {
-    text-align: right;
-    float: right;
-    margin-right: 1vw;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 78%; 
+    white-space: nowrap;
 }
-
 .socials ul {
-    margin: 0px;
     padding: 0px;
-    list-style: none;
+    margin: 0px;
 }
-
+/* sets display so all icons are always in one line */
 .socials ul li {
     display: inline-block;
 }
-/*
-.socials ul li a {
-    display: block;
-    border: 1px solid black;
-    border-radius: 50%;
-    height: 45px;
-    width: 45px;
-    line-height: 45px;
-    padding: 5px;
-}
-*/
+/* sizes icon images */
 .socials img{
-    padding: .5vw;
-    height: 4vw;
-    width: 4vw;
+    padding: 0.5vw;
+    height: 5vw;
+    width: 5vw;
 }
+/* sizes icon hover properties to know when you have your mouse over one */
+.socials img:hover {
+    border-radius: 50%;
+    background-color: black;
+}
+
