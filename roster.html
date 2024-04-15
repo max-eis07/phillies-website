@@ -8,6 +8,21 @@
         <meta name="viewport" content="width=device-width, intitial-scale=1.0">
         <title>Roster Page</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/roster.css">
+        <style>
+            /* adds image background and sizes the header */
+            header {
+                background-attachment: local;
+                background-image: url(images/header-background.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                max-height: 400px;
+                height: 25vw;
+                display: flex;
+                position: relative;
+            }
+        </style>
     </head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PYCE5D354"></script>
@@ -21,7 +36,6 @@
     <body>
         <header>
             <img src="images/logo1.png" alt="header logo">
-            <h1></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -34,8 +48,8 @@
         <main>
             <section id="pitchers">
                 <table>
-                    <tr>
-                        <th>  </th>
+                    <tr id="titles">
+                        <th></th>
                         <th>Pitchers</th>
                         <th>#</th>
                         <th>B/T</th>
@@ -43,7 +57,7 @@
                         <th>Country</th>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/663465/headshot/silo/current" alt="kolby allard" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/663465/headshot/silo/current" alt="kolby allard"></td>
                         <td>Kolby Allard</td>
                         <td></td>
                         <td>L/L</td>
@@ -51,7 +65,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/621237/headshot/silo/current" alt="José Alvarado" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/621237/headshot/silo/current" alt="José Alvarado"></td>
                         <td>José Alvarado</td>
                         <td>46</td>
                         <td>L/L</td>
@@ -59,7 +73,7 @@
                         <td>Venezuela</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/641401/headshot/silo/current" alt="Connor Brogdon" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/641401/headshot/silo/current" alt="Connor Brogdon"></td>
                         <td>Connor Brogdon</td>
                         <td>75</td>
                         <td>R/R</td>
@@ -67,7 +81,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/666721/headshot/silo/current" alt="max castillo" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/666721/headshot/silo/current" alt="max castillo"></td>
                         <td>Max Castillo</td>
                         <td></td>
                         <td>R/R</td>
@@ -75,7 +89,7 @@
                         <td>Venezuela</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/592229/headshot/silo/current" alt="Dylan Covey" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/592229/headshot/silo/current" alt="Dylan Covey"></td>
                         <td>Dylan Covey</td>
                         <td>54</td>
                         <td>R/R</td>
@@ -83,7 +97,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/622554/headshot/silo/current" alt="Seranthony Domínguez" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/622554/headshot/silo/current" alt="Seranthony Domínguez"></td>
                         <td>Seranthony Domínguez</td>
                         <td>58</td>
                         <td>R/R</td>
@@ -91,7 +105,7 @@
                         <td>Dominican Rep.</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/656546/headshot/silo/current" alt="Jeff Hoffman" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/656546/headshot/silo/current" alt="Jeff Hoffman"></td>
                         <td>Jeff Hoffman</td>
                         <td>68</td>
                         <td>R/R</td>
@@ -99,7 +113,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/689147/headshot/silo/current" alt="Orion Kerkering " height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/689147/headshot/silo/current" alt="Orion Kerkering "></td>
                         <td>Orion Kerkering </td>
                         <td>50</td>
                         <td>R/R</td>
@@ -107,7 +121,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/628708/headshot/silo/current" alt="Yunior Marte" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/628708/headshot/silo/current" alt="Yunior Marte"></td>
                         <td>Yunior Marte</td>
                         <td>43</td>
                         <td>R/R</td>
@@ -115,7 +129,7 @@
                         <td>Dominican Rep.</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/675650/headshot/silo/current" alt="Michael Mercado" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/675650/headshot/silo/current" alt="Michael Mercado"></td>
                         <td>Michael Mercado</td>
                         <td></td>
                         <td>R/R</td>
@@ -123,7 +137,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/686842/headshot/silo/current" alt="McKinley Moore" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/686842/headshot/silo/current" alt="McKinley Moore"></td>
                         <td>McKinley Moore</td>
                         <td>79</td>
                         <td>R/R</td>
@@ -131,7 +145,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/656793/headshot/silo/current" alt="Nick Nelson" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/656793/headshot/silo/current" alt="Nick Nelson"></td>
                         <td>Nick Nelson</td>
                         <td>57</td>
                         <td>R/R</td>
@@ -139,7 +153,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/605400/headshot/silo/current" alt="Aaron Nola" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/605400/headshot/silo/current" alt="Aaron Nola"></td>
                         <td>Aaron Nola</td>
                         <td>27</td>
                         <td>R/R</td>
@@ -147,7 +161,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/672391/headshot/silo/current" alt="Kaleb Ort" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/672391/headshot/silo/current" alt="Kaleb Ort"></td>
                         <td>Kaleb Ort</td>
                         <td></td>
                         <td>R/R</td>
@@ -155,7 +169,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/656814/headshot/silo/current" alt="Luis F. Ortiz" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/656814/headshot/silo/current" alt="Luis F. Ortiz"></td>
                         <td>Luis F. Ortiz</td>
                         <td>56</td>
                         <td>R/R</td>
@@ -163,7 +177,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/621074/headshot/silo/current" alt="Michael Rucker" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/621074/headshot/silo/current" alt="Michael Rucker"></td>
                         <td>Michael Rucker</td>
                         <td></td>
                         <td>R/R</td>
@@ -171,7 +185,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/642397/headshot/silo/current" alt="Gregory Soto" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/642397/headshot/silo/current" alt="Gregory Soto"></td>
                         <td>Gregory Soto</td>
                         <td>30</td>
                         <td>L/L</td>
@@ -179,7 +193,7 @@
                         <td>Dominican Rep.</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/621381/headshot/silo/current" alt="Matt Strahm" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/621381/headshot/silo/current" alt="Matt Strahm"></td>
                         <td>Matt Strahm</td>
                         <td>25</td>
                         <td>R/L</td>
@@ -187,7 +201,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/624133/headshot/silo/current" alt="Ranger Suárez" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/624133/headshot/silo/current" alt="Ranger Suárez"></td>
                         <td>Ranger Suárez</td>
                         <td>55</td>
                         <td>L/L</td>
@@ -195,7 +209,7 @@
                         <td>Venezuela</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/650911/headshot/silo/current" alt="Cristopher Sánchez" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/650911/headshot/silo/current" alt="Cristopher Sánchez"></td>
                         <td>Cristopher Sánchez</td>
                         <td>61</td>
                         <td>L/L</td>
@@ -203,7 +217,7 @@
                         <td>Dominican Rep.</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/592836/headshot/silo/current" alt="Taijuan Walker" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/592836/headshot/silo/current" alt="Taijuan Walker"></td>
                         <td>Taijuan Walker</td>
                         <td>99</td>
                         <td>R/R</td>
@@ -211,7 +225,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/554430/headshot/silo/current" alt="Zack Wheeler" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/554430/headshot/silo/current" alt="Zack Wheeler"></td>
                         <td>Zack Wheeler</td>
                         <td>45</td>
                         <td>L/R</td>
@@ -222,8 +236,8 @@
             </section>
             <section id="catchers">
                 <table>
-                    <tr>
-                        <th>  </th>
+                    <tr id="titles">
+                        <th></th>
                         <th>Catchers</th>
                         <th>#</th>
                         <th>B/T</th>
@@ -231,7 +245,7 @@
                         <th>Country</th>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/665561/headshot/silo/current" alt="rafael marchan" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/665561/headshot/silo/current" alt="rafael marchan"></td>
                         <td>Rafael Marchán</td>
                         <td>13</td>
                         <td>S/R</td>
@@ -239,7 +253,7 @@
                         <td>Venezuela</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/592663/headshot/silo/current" alt="jt realmuto" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/592663/headshot/silo/current" alt="jt realmuto"></td>
                         <td>J.T. Realmuto</td>
                         <td>10</td>
                         <td>R/R</td>
@@ -247,7 +261,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/596117/headshot/silo/current" alt="garrett stubs" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/596117/headshot/silo/current" alt="garrett stubs"></td>
                         <td>Garrett Stubs</td>
                         <td>21</td>
                         <td>L/R</td>
@@ -258,7 +272,7 @@
             </section>
             <section id="infielders">
                 <table>
-                    <tr>
+                    <tr id="titles">
                         <th>  </th>
                         <th>Infielders</th>
                         <th>#</th>
@@ -267,7 +281,7 @@
                         <th>Country</th>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/664761/headshot/silo/current" alt="alec bohm" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/664761/headshot/silo/current" alt="alec bohm"></td>
                         <td>Alec Bohm</td>
                         <td>28</td>
                         <td>R/R</td>
@@ -275,7 +289,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/666801/headshot/silo/current" alt="Rodolfo Castro" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/666801/headshot/silo/current" alt="Rodolfo Castro"></td>
                         <td>Rodolfo Castro</td>
                         <td>29</td>
                         <td>S/R</td>
@@ -283,7 +297,7 @@
                         <td>Dominican Rep.</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/665019/headshot/silo/current" alt="Kody Clemens" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/665019/headshot/silo/current" alt="Kody Clemens"></td>
                         <td>Kody Clemens</td>
                         <td>23</td>
                         <td>L/R</td>
@@ -291,7 +305,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/669742/headshot/silo/current" alt="Darick Hall" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/669742/headshot/silo/current" alt="Darick Hall"></td>
                         <td>Darick Hall</td>
                         <td>24</td>
                         <td>L/R</td>
@@ -299,7 +313,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/624641/headshot/silo/current" alt="Edmundo Sosa" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/624641/headshot/silo/current" alt="Edmundo Sosa"></td>
                         <td>Edmundo Sosa</td>
                         <td>33</td>
                         <td>R/R</td>
@@ -307,7 +321,7 @@
                         <td>Panama</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/681082/headshot/silo/current" alt="Bryson Stott" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/681082/headshot/silo/current" alt="Bryson Stott"></td>
                         <td>Bryson Stott</td>
                         <td>5</td>
                         <td>L/R</td>
@@ -315,7 +329,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/607208/headshot/silo/current" alt="Trea Turner" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/607208/headshot/silo/current" alt="Trea Turner"></td>
                         <td>Trea Turner</td>
                         <td>7</td>
                         <td>R/R</td>
@@ -323,7 +337,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/642215/headshot/silo/current" alt="weston wilson" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/642215/headshot/silo/current" alt="weston wilson"></td>
                         <td>Weston Wilson</td>
                         <td>37</td>
                         <td>R/R</td>
@@ -334,7 +348,7 @@
             </section>
             <section id="outfielders">
                 <table>
-                    <tr>
+                    <tr id="titles">
                         <th>  </th>
                         <th>Outfielders</th>
                         <th>#</th>
@@ -343,7 +357,7 @@
                         <th>Country</th>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/592206/headshot/silo/current" alt="nick castellanos" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/592206/headshot/silo/current" alt="nick castellanos"></td>
                         <td>Nick Castellanos</td>
                         <td>8</td>
                         <td>R/R</td>
@@ -351,7 +365,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/595909/headshot/silo/current" alt="Jake Cave" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/595909/headshot/silo/current" alt="Jake Cave"></td>
                         <td>Jake Cave</td>
                         <td>44</td>
                         <td>L/L</td>
@@ -359,7 +373,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/669016/headshot/silo/current" alt="Brandon Marsh" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/669016/headshot/silo/current" alt="Brandon Marsh"></td>
                         <td>Brandon Marsh</td>
                         <td>16</td>
                         <td>L/R</td>
@@ -367,7 +381,7 @@
                         <td>United States</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/665506/headshot/silo/current" alt="Christian Pache" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/665506/headshot/silo/current" alt="Christian Pache"></td>
                         <td>Christian Pache</td>
                         <td>19</td>
                         <td>R/R</td>
@@ -375,7 +389,7 @@
                         <td>Dominican Rep.</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/679032/headshot/silo/current" alt="Johan Rojas" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/679032/headshot/silo/current" alt="Johan Rojas"></td>
                         <td>Johan Rojas</td>
                         <td>18</td>
                         <td>R/R</td>
@@ -383,7 +397,7 @@
                         <td>Domincan Rep.</td>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/656941/headshot/silo/current" alt="Kyle Schwarber" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/656941/headshot/silo/current" alt="Kyle Schwarber"></td>
                         <td>Kyle Schwarber</td>
                         <td>12</td>
                         <td>L/R</td>
@@ -394,7 +408,7 @@
             </section>
             <section id="dh">
                 <table>
-                    <tr>
+                    <tr id="titles">
                         <th>  </th>
                         <th>Designated Hitters</th>
                         <th>#</th>
@@ -403,7 +417,7 @@
                         <th>Country</th>
                     </tr>
                     <tr>
-                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/547180/headshot/silo/current" alt="bryce harper" height="75" width="75"></td>
+                        <td><img src="https://img.mlbstatic.com/mlb-photos/image/upload/d_people:generic:headshot:silo:current.png/r_max/w_180,q_auto:best/v1/people/547180/headshot/silo/current" alt="bryce harper"></td>
                         <td>Bryce Harper</td>
                         <td>3</td>
                         <td>L/R</td>

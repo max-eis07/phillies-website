@@ -8,7 +8,8 @@ body {
     box-sizing: border-box;
 }
 
-/* adds image background and sizes the header */
+/*  Section was added internally in the head
+    adds image background and sizes the header 
 header {
     background-attachment: local;
     background-image: url(images/header-background.jpg);
@@ -20,6 +21,7 @@ header {
     display: flex;
     position: relative;
 }
+*/
 /* positions the header logo */
 header img {
     height: 20vw;
