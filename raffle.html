@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, intitial-scale=1.0">
         <title>Raffle Page</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/raffle.css">
+        <!-- <script src="formValidation.js"></script> -->
         <style>
             /* adds image background and sizes the header */
             header {
@@ -39,7 +41,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="roster.html">Roster</a></li>
-                    <li><a href="stats.html">Stats</a></li>
+                    <!-- <li><a href="stats.html">Stats</a></li> -->
                     <li><a href="raffle.html">Raffle</a></li>
                 </ul>
             </nav>
@@ -47,32 +49,34 @@
         <main>
             <h3>Enter for a chance to win 2-4 tickets to one of five home games during the regular season. Limited to one entry per person.</h3>
             <img src="images/raffle tickets.png" alt="raffle tickets" height="400" width="320">
-            <form action="file:///C:/Users/maxwe/OneDrive/Desktop/ITEC%20362/Final%20Website/raffle.html" method="post">  
+            <form id="raffle" action="file:///C:/Users/maxwe/OneDrive/Desktop/ITEC%20362/Final%20Website/raffle.html" method="post">  
                 <p>
-                  <label for="first"></label>
-                  <input type="text" name="first" id="first" placeholder="First Name" required>
-                  <label for="last"></label>
-                  <input type="text" name="last" id="last" placeholder="Last Name" required>
+                  <label for="first">First Name</label>
+                  <input type="text" name="first" id="first" required>
+
+                  <label for="last">Last Name</label>
+                  <input type="text" name="last" id="last" required>
                 </p>
                 <p>
-                    <label for="email"></label>
-                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" required>
+
+                    <label for="phone">Phone #</label>
+                    <input type="tel" name="phone" id="phone" required>
                 </p>
                 <p>
-                    <label for="phone"></label>
-                    <input type="tel" name="phone" id="phone" placeholder="Phone #" required>
+                    <label for="address">Street Address</label>
+                    <input type="text" name="address" id="address" required>
+
+                    <label for="city">City</label>
+                    <input type="text" name="city" id="city" required>
                 </p>
                 <p>
-                    <label for="address"></label>
-                    <input type="text" name="address" id="address" placeholder="Street Address" required>
-                </p>
-                <p>
-                    <label for="city"></label>
-                    <input type="text" name="city" id="city" placeholder="City" required>
-                    <label for="state"></label>
-                    <input type="text" name="state" id="state" placeholder="State" maxlength="2" required>
-                    <label for="zip"></label>
-                    <input type="number" name="zip" id="zip" placeholder="Zip" maxlength="5" required>
+                    <label for="state">State</label>
+                    <input type="text" name="state" id="state" minlength="2" maxlength="2" required>
+
+                    <label for="zip">Zip</label>
+                    <input type="text" name="zip" id="zip" minlength="5" maxlength="5" required>
                 </p>
                 <input type="submit" value="Submit">
               </form>   
@@ -81,7 +85,7 @@
             <section class="sitemap">
                 <a href="index.html">Home</a>
                 <a href="roster.html">Roster</a>
-                <a href="stats.html">Stats</a>
+                <!-- <a href="stats.html">Stats</a> -->
                 <a href="raffle.html">Raffle</a>
             </section>
             <img src="images/logo2.png" alt="footer logo" id="footer-logo">

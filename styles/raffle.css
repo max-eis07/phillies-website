@@ -1,0 +1,66 @@
+/* sets font size and aligns text */
+main h3 {
+    font-size: 3vw;
+    text-align: center;
+    position: relative;
+}
+
+/* sets image properties */
+main img {
+    float: right;
+    height: 24vw;
+    width: 20vw;
+    margin-right: 10vw;
+}
+
+main p {
+    margin-left: 1vw;
+}
+
+label {
+    width: 5vw;
+    display: inline-block;
+    text-align: right;
+    margin-left: 2vw;
+    box-sizing: border-box;
+    margin-bottom: 2vw;
+    font-size: 1vw;
+ }
+
+/* sets input field properties */
+ input[type=text], input[type=email], input[type=tel] {
+    box-sizing: border-box;
+    width: 15vw;
+    height: 1.5vw;
+    padding: 2vw;
+    border: .1vw solid black;
+    border-radius: 4px;
+ }
+
+/* sets submit button properties */
+input[type=submit] {
+    height: 1.5vw;
+    background-color: #e81828;
+    color: white;
+    padding: 1vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    margin-left: 8.25vw;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5vw;
+    line-height: .25vw;
+ }
+
+ /* sets submit hover property */
+ input[type=submit]:hover {
+    border: .25vw solid black;
+ }
+
+ /*
+ input:invalid {
+    border: .1vw solid #e81828;
+ }
+ */

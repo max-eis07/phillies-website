@@ -1,27 +1,31 @@
+/* formats the size of each player image and puts a circular border */
 main img {
-    height: 12vw;
-    width: 12vw;
+    height: 9vw;
+    width: 9vw;
     border-radius: 50%;
     border: .15vw solid #e81828;
 }
 
+/* formats table headers and spaces each column */
 main table th {
     font-size: 3vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
+/* sets table row height, the font size, and aligns the each table data center */
 #pitchers tr, #catchers tr, #infielders tr, #outfielders tr, #dh tr{
     height: 10vw;
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: center;
-
 }
 
+/* creates margin between the side of the window and the tables */
 main {
     margin: 2vw;
 }
 
+/* creates space between each table */
 table {
     margin-bottom: 5vw;
 }
